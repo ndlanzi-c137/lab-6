@@ -1,10 +1,14 @@
 //create cars api using express
 const express = require('express');
 const app = express();
+const path = require('path');
 
 
 
 app.use(express.json());
+const PORT = process.env.PORT || 3001;
+
+app.use(express.static(path.join(__dirname)));
 
 const cars = require('./cars.json');
 
@@ -46,7 +50,6 @@ app.post('/cars', (req, res) => {
     res.json(newCar);
 });
 
-//start app at localhost:3001
-app.listen(3001, () => {
-    console.log('Server started at http://localhost:3001');
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
