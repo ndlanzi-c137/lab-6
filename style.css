@@ -12,23 +12,13 @@ body {
 }
 
 header {
-    background-color: #fa0c0c; /*#333; */
+    background-color: #333; 
     color: #fff;
     padding: 20px 0;
     text-align: center;
 }
 
-footer {
-    background-color: #f00c0c;
-    color: white;
-    text-align: center;
-    padding: 0.01em;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
 
-  foo
 header h1 {
     margin: 0;
 }
